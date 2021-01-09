@@ -1,0 +1,7 @@
+#!/bin/zsh # replace zsh with the shell that you are using! for example: bash,...
+DIR="$(cd "$(dirname "$0")" && pwd)" # get's the recent directory name where the script was placed in
+cd $DIR/./ # changes in to the recent directory
+python simple-http-server-with-cors-header.py 8080 # put the name of your simple http server with CORS-Headers script here
+exit
+
+#This is a small script that is meant to build your personal virtual webhost with help of a custom version of the python "SimpleHTTPServer" that has CORS-Headers attached to it
